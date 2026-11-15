@@ -17,6 +17,12 @@ html{scroll-behavior:smooth}
 body{background-image:linear-gradient(180deg,#f4f8f9,#e9f1f3 60%,#f4f8f9);font-family:'Noto Sans KR','Pretendard',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;overflow-x:hidden;word-break:keep-all}
 a{color:inherit;text-decoration:none}
 main,nav,footer{position:relative;z-index:1}
+footer{background:var(--glow);color:#fff;text-align:center;padding:64px 5vw 36px}
+footer h3{font-size:22px;font-weight:800;margin-bottom:6px}
+footer .ct{display:flex;justify-content:center;gap:14px 36px;flex-wrap:wrap;margin:18px 0 30px}
+footer .ct a{font-size:clamp(22px,3.4vw,34px);font-weight:800;letter-spacing:.02em;border-bottom:2px solid #ffffff55;transition:.3s}
+footer .ct a:hover{border-color:#fff}
+footer small{display:block;font-size:13px;color:#ffffffcc;border-top:1px solid #ffffff33;padding-top:22px}
 
 /* progress + nav */
 #bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--glow),var(--glow2));z-index:50;}
@@ -125,7 +131,6 @@ h2{font-size:clamp(28px,4.4vw,48px);font-weight:800;line-height:1.25;margin-bott
 .end .g{background:linear-gradient(100deg,var(--glow),var(--glow2));-webkit-background-clip:text;background-clip:text;color:transparent}
 .btn{display:inline-block;margin-top:34px;padding:16px 38px;border-radius:99px;background:var(--glow);color:#fff;font-weight:800;box-shadow:0 10px 30px #37758955;transition:.3s}
 .btn:hover{transform:scale(1.07)}
-footer{text-align:center;color:var(--mute);font-size:13px;padding:30px;border-top:1px solid var(--line)}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.hero h1 span,.hero p{opacity:1;transform:none}}
 </style>
 </head>
@@ -236,7 +241,11 @@ footer{text-align:center;color:var(--mute);font-size:13px;padding:30px;border-to
   <a class="btn rv d2" href="https://sosaengcom.imweb.me/" target="_blank" rel="noopener">소생커뮤니티 홈페이지</a>
 </section>
 </main>
-<footer>© 소생커뮤니티 · 소생커뮤니티협동조합 설립 준비 중 (광명시)</footer>
+<footer>
+  <h3>CONTACT · 소생커뮤니티</h3>
+  <div class="ct"><a href="tel:01074027246">010-7402-7246</a><a href="tel:01088680566">010-8868-0566</a></div>
+  <small>© 소생커뮤니티 · 소생커뮤니티협동조합 설립 준비 중 (광명시)</small>
+</footer>
 
 <script>
 // progress
